@@ -1,0 +1,53 @@
+body{
+    letter-spacing:0.1em;
+}
+.mainbody{
+    height: 800px;
+    width: 100%;
+    background-image: url(Blue_sky_and_clouds.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    width: 100%;
+    max-width: 370px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 3px;
+    outline: none;
+}
+.change-location{
+    justify-content: center;
+    align-items: center;
+}
+
+.detail{
+    height: 415px;
+    width: 500px;
+    justify-content: flex-end;
+}
+.time{
+
+    height: 410px;
+    width: 800px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media screen and (max-width:550px) {
+
+    .weather-detail{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .detail{
+       height: 300px;
+    }
+    .time{
+        flex-direction: column;
+        height: 200px;
+        width: 300px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
